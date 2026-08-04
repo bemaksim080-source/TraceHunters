@@ -1,0 +1,14 @@
+﻿{
+  "latest_version": "0.7",
+  "release_date": "2026-08-05",
+  "download_url": "https://github.com/bemaksim080-source/TraceHunters/releases/download/v0.7/TraceHunters_v0.7.zip",
+  "changelog": [
+    "🤠 Ковбойский дизайн",
+    "🔄 Авто-обновления через GitHub",
+    "⚙️ Настройки в GUI",
+    "📦 Ярлык на рабочем столе"
+  ],
+  "min_supported_version": "0.5",
+  "file_size_mb": 2.5,
+  "sha256": "PLACEHOLDER_HASH_WILL_BE_SET_AFTER_BUILD"
+}

@@ -1,0 +1,44 @@
+{
+  "scanner": {
+    "auto_scan_on_start": false,
+    "show_clean_processes": false,
+    "progress_interval": 15
+  },
+  "cleaner": {
+    "auto_clean_temp": false,
+    "warn_threshold_mb": 100,
+    "include_prefetch": false,
+    "include_recycle_bin": true
+  },
+  "quarantine": {
+    "auto_isolate_threats": false,
+    "use_encryption": true,
+    "confirm_before_action": true
+  },
+  "antiminer": {
+    "enabled": true,
+    "cpu_threshold_percent": 80,
+    "monitor_interval_sec": 3,
+    "auto_suspend": false,
+    "whitelist": [
+      "system",
+      "svchost.exe",
+      "explorer.exe",
+      "python.exe"
+    ]
+  },
+  "ai_detector": {
+    "enabled": true,
+    "entropy_threshold": 7.2,
+    "risk_threshold": 60
+  },
+  "ui": {
+    "print_speed": 0.015,
+    "theme": "cowboy"
+  },
+  "updates": {
+    "auto_check": true,
+    "update_url": "https://raw.githubusercontent.com/bemaksim080-source/TraceHunters/main/update.json"
+  },
+  "version": "0.7"
+}
