@@ -1,5 +1,5 @@
 {
-  "latest_version": "0.9",
+  "latest_version": "1.0",
   "release_date": "2026-08-05",
   "download_url": "https://github.com/bemaksim080-source/TraceHunters/releases/download/v0.9/TraceHunters_v0.9.zip",
   "changelog": [
@@ -10,5 +10,5 @@
   ],
   "min_supported_version": "0.7",
   "file_size_mb": 3.2,
-  "sha256": "PLACEHOLDER_HASH_WILL_BE_SET_AFTER_BUILD"
+  "sha256": "A01EF58CC4D5B549962D0A0A2F164854F800E41306C0BF7356CF53EBA062294B"
 }
