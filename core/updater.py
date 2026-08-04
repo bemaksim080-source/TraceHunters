@@ -12,7 +12,7 @@ class AutoUpdater:
         self.config = config
         self.current_version = "0.7"
         # ⚠️ ВАЖНО: Используем raw.githubusercontent.com для прямого доступа к файлу
-        self.update_url = "https://raw.githubusercontent.com/bemaksim080-source/TraceHunters/main/update.json"
+        self.update_url = "https://bemaksim080-source.github.io/TraceHunters/update.json"
         self.install_dir = os.path.dirname(os.path.dirname(__file__))
         # Обход прокси (на случай если он всё ещё мешает)
         self.opener = urllib.request.build_opener(urllib.request.ProxyHandler({}))

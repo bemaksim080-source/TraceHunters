@@ -1,19 +1,31 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>TraceHunters Update Server</title>
-    <style>
-        body { background: #3E2723; color: #F5E6C8; font-family: 'Courier New', monospace; text-align: center; padding: 50px; }
-        h1 { color: #D4A017; }
-        .btn { background: #D4A017; color: #3E2723; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 20px; }
-    </style>
+    <meta charset="UTF-8">
+    <title>🤠 TraceHunters</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>🤠 TraceHunters HQ</h1>
-    <p>Сервер обновлений шерифа.</p>
-    <p>Версия: 0.7 (Cowboy Edition)</p>
-    <a href="update.json" class="btn">📄 Проверить JSON API</a>
-    <br><br>
-    <small>Если ты видишь этот текст — сайт работает!</small>
+    <div class="container">
+        <header>
+            <h1>🤠 TRACEHUNTERS</h1>
+            <p>SHERIFF'S OFFICE • Est. 2026</p>
+        </header>
+        <section class="hero">
+            <h2>Добро пожаловать в офис шерифа!</h2>
+            <p>Защита Дикого Запада от цифровых бандитов</p>
+            <a id="dl" href="#" class="btn">📥 Скачать</a>
+            <p id="ver"></p>
+        </section>
+        <footer>🤠 Ты & Ваня + Qwen © 2026</footer>
+    </div>
+    <script>
+        fetch("update.json")
+        .then(r => r.json())
+        .then(d => {
+            document.getElementById("ver").textContent = "v" + d.latest_version + " • " + d.release_date;
+            document.getElementById("dl").href = d.download_url;
+        }).catch(() => {});
+    </script>
 </body>
 </html>
